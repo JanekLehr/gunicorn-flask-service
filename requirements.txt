@@ -1,0 +1,4 @@
+Flask
+gunicorn
+eventlet>=0.9.7
+cloudant>=2.0.0
