@@ -1,12 +1,8 @@
 import multiprocessing
 import gunicorn.app.base
 from gunicorn.six import iteritems
-import eventlet
 
 from flask_app import app
-
-# Patch system modules to make them friendly to green threads
-eventlet.monkey_patch()
 
 
 class GunicornServer(gunicorn.app.base.BaseApplication):
